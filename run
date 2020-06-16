@@ -1,0 +1,6 @@
+#!/bin/bash
+export DISPLAY=:0.0
+xhost +
+sudo -u pi touch ~/.Xauthority
+sudo -u pi XAUTHORITY=/home/pi/.Xauthority xauth add ${DISPLAY} . $(sudo xauth list | grep 'unix' | tr -s ' ' | cut -d ' ' -f3)
+python3 mDisplay.py #> ~/prod/mDisplay.log 2>&1

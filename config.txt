@@ -1,0 +1,17 @@
+hdmi_force_hotplug=1
+hdmi_cvt=480 800 60 6
+hdmi_group=2
+hdmi_mode=87
+display_hdmi_rotate=3
+hdmi_drive=1
+hdmi_force_mode=1
+disable_splash=1
+disable_overscan=1
+max_usb_current=1
+
+dtoverlay=allo-digione
+dtparam=i2c_arm=on
+dtparam=i2s=on
+dtparam=audio=off
+#dtoverlay=pi3-disable-wifi
+#dtoverlay=pi3-disable-bt
